@@ -1,0 +1,16 @@
+- hosts: all
+  user: root
+  
+  tasks:
+  - name:  yum install httpd
+    yum:
+      name: httpd
+      state: latest
+#  - name:  install redis
+#    apt:
+#      name : redis
+#      state : latest
+#  - name:  start redis
+#    service:
+#      name: redis
+#      state: started
